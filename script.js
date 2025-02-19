@@ -25,3 +25,5 @@ color.forEach((color)=>(color.addEventListener('click',()=>{
 
 
 // color.forEach((color)=>color.onclick=()=>{console.log(color.id)});
+
+//adding something to push into git through vs code terminals
