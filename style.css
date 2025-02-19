@@ -1,0 +1,79 @@
+/* Reset default margin and padding */
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Center the list horizontally and vertically */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the unordered list */
+        #allColour {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px; /* Space between buttons */
+            padding: 20px;
+        }
+         /* Set button colors based on their IDs */
+        #green {
+            background-color: green;
+        }
+
+        #yellow {
+            background-color: yellow;
+            color: black; /* Change text color for better contrast */
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #sky {
+            background-color: skyblue;
+            color: black; /* Change text color for better contrast */
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        /* Style the list items as buttons */
+        #allColour li {
+            
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            flex: 1 1 auto; /* Allow buttons to grow and shrink */
+            max-width: 200px; /* Limit button width */
+        }
+
+        /* Hover effect for buttons */
+        #allColour li:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            #allColour {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #allColour li {
+                width: 100%; /* Full width on small screens */
+                max-width: none;
+            }
+        }
